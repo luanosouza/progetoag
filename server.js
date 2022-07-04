@@ -12,7 +12,7 @@ const MongoStore = require('connect-mongo'); // salvar sessoes no banco de dados
 const flash = require('connect-flash'); // mensagem que somen
 const routes = require('./routes'); 
 const path = require('path');
-//const helmet = require('helmet');
+const helmet = require('helmet');
 const csrf = require('csurf'); 
 const { middlewareGlobal, checkCsrfError, csrfMiddleware } = require('./src/middlewares/middleware');
 
